@@ -1,7 +1,7 @@
 from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
-
+import random
 
 def draw_points(x, y):
     glPointSize(5) #pixel size. by default 1 thake
