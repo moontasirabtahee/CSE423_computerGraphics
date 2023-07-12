@@ -10,44 +10,30 @@ from OpenGL.GL import *
 from OpenGL.GLUT import *
 from OpenGL.GLU import *
 
-# This function is used to draw pixels.
 def draw_points(x, y):
-    # The parameter that is passed in the function dictates the size of the pixel.
     glPointSize(10)
 
     glBegin(GL_POINTS)
-
-    # Think of this as a co-ordinate. At the given x and y position the pixel will be drawn.
     glVertex2f(x, y)
 
     glEnd()
 
-
-# This function is used to draw lines.
 def draw_lines():
     glBegin(GL_LINES)
-
-#-----------Exterior_Rectangle-----------
-    #==========X-axis==========#
     glVertex2f(100, 100)
     glVertex2f(500, 100)
-
     glVertex2f(100, 500)
     glVertex2f(500, 500)
-    #==========Y-axis==========#
     glVertex2f(100, 100)
     glVertex2f(100, 500)
-
     glVertex2f(500, 100)
     glVertex2f(500, 500)
     glVertex2f(150, 350)
     glVertex2f(250, 350)
     glVertex2f(150, 450)
     glVertex2f(250, 450)
-
     glVertex2f(350, 350)
     glVertex2f(450, 350)
-
     glVertex2f(350, 450)
     glVertex2f(450, 450)
     glVertex2f(150, 350)
